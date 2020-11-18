@@ -1,6 +1,6 @@
 //#include "list.hpp"
+#include "newerlist.hpp"
 #include "vector.hpp"
-#include "newlist.hpp"
 #include <iostream>
 #include <list>
 #include <sstream>
@@ -718,22 +718,30 @@ int vector_tests()
 
 void list_tests()
 {
-    /*
-    list_test("empty",
-        {});
-    */
+    list_test("empty", {});
     list_test("some back",
         {
             a.push_back(1);
             a.push_back(2);
             a.push_back(3);
         });
-    list_test("some back",
+    list_test("some front",
         {
             a.push_front(1);
             a.push_front(2);
             a.push_front(3);
         });
+    list_test("reclear front",
+              {
+                  a.push_front(1);
+                  a.push_front(2);
+                  a.push_front(3);
+                  a.clear();
+                  a.push_back(2);
+                  a.push_front(1);
+                  a.push_back(3);
+              });
+
 }
 
 int main()

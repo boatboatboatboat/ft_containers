@@ -6,6 +6,15 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
@@ -21,21 +30,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="551b2424-5a18-4de1-8e66-a4d22becc732" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.clang-format" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newerlist.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newlist.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ft_containers_git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ft_containers_git.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.clang-tidy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newerlist.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/list.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/hacks.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/hacks.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newerlist.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/newerlist.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/stack.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ClangdSettings">
+    <option name="completionType" value="BuiltinWithClangd" />
+    <option name="clangWarnings" value="-Wno-unused-variable,-Wno-infinite-recursion,-Werror=implicit-function-declaration,-Wshadow,-Wno-shadow-field-in-constructor-modified,-Wno-shadow-ivar,-Wuninitialized,-Wunused-label,-Wunused-lambda-capture,-Wc++11-extensions" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="o9cnj6fz" />
   </component>
@@ -47,17 +63,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
     <property name="cf.advertisement.text.overridden" value="true" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -66,6 +79,11 @@
     <configuration name="ft_containers" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ft_containers" TARGET_NAME="ft_containers" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ft_containers" RUN_TARGET_NAME="ft_containers">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -117,9 +135,59 @@
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="2982" y="457" width="426" height="477" key="FileChooserDialogImpl/1920.0.2560.1440/0.639.1920.1080@1920.0.2560.1440" timestamp="1605469623124" />
-    <state x="2695" y="334" key="SettingsEditor" timestamp="1605469700730">
-      <screen x="1920" y="0" width="2560" height="1440" />
+    <state width="3158" height="542" key="GridCell.Tab.0.bottom" timestamp="1605710705526">
+      <screen x="0" y="0" width="3200" height="1800" />
     </state>
+    <state width="3158" height="542" key="GridCell.Tab.0.bottom/0.0.3200.1800@0.0.3200.1800" timestamp="1605710705526" />
+    <state width="3158" height="542" key="GridCell.Tab.0.center" timestamp="1605710705524">
+      <screen x="0" y="0" width="3200" height="1800" />
+    </state>
+    <state width="3158" height="542" key="GridCell.Tab.0.center/0.0.3200.1800@0.0.3200.1800" timestamp="1605710705524" />
+    <state width="3158" height="542" key="GridCell.Tab.0.left" timestamp="1605710705523">
+      <screen x="0" y="0" width="3200" height="1800" />
+    </state>
+    <state width="3158" height="542" key="GridCell.Tab.0.left/0.0.3200.1800@0.0.3200.1800" timestamp="1605710705523" />
+    <state width="3158" height="542" key="GridCell.Tab.0.right" timestamp="1605710705525">
+      <screen x="0" y="0" width="3200" height="1800" />
+    </state>
+    <state width="3158" height="542" key="GridCell.Tab.0.right/0.0.3200.1800@0.0.3200.1800" timestamp="1605710705525" />
+    <state width="3158" height="542" key="GridCell.Tab.1.bottom" timestamp="1605710705528">
+      <screen x="0" y="0" width="3200" height="1800" />
+    </state>
+    <state width="3158" height="542" key="GridCell.Tab.1.bottom/0.0.3200.1800@0.0.3200.1800" timestamp="1605710705528" />
+    <state width="3158" height="542" key="GridCell.Tab.1.center" timestamp="1605710705527">
+      <screen x="0" y="0" width="3200" height="1800" />
+    </state>
+    <state width="3158" height="542" key="GridCell.Tab.1.center/0.0.3200.1800@0.0.3200.1800" timestamp="1605710705527" />
+    <state width="3158" height="542" key="GridCell.Tab.1.left" timestamp="1605710705527">
+      <screen x="0" y="0" width="3200" height="1800" />
+    </state>
+    <state width="3158" height="542" key="GridCell.Tab.1.left/0.0.3200.1800@0.0.3200.1800" timestamp="1605710705527" />
+    <state width="3158" height="542" key="GridCell.Tab.1.right" timestamp="1605710705528">
+      <screen x="0" y="0" width="3200" height="1800" />
+    </state>
+    <state width="3158" height="542" key="GridCell.Tab.1.right/0.0.3200.1800@0.0.3200.1800" timestamp="1605710705528" />
+    <state width="3158" height="664" key="GridCell.Tab.2.bottom" timestamp="1605708139413">
+      <screen x="0" y="0" width="3200" height="1800" />
+    </state>
+    <state width="3158" height="664" key="GridCell.Tab.2.bottom/0.0.3200.1800@0.0.3200.1800" timestamp="1605708139413" />
+    <state width="3158" height="664" key="GridCell.Tab.2.center" timestamp="1605708139412">
+      <screen x="0" y="0" width="3200" height="1800" />
+    </state>
+    <state width="3158" height="664" key="GridCell.Tab.2.center/0.0.3200.1800@0.0.3200.1800" timestamp="1605708139412" />
+    <state width="3158" height="664" key="GridCell.Tab.2.left" timestamp="1605708139412">
+      <screen x="0" y="0" width="3200" height="1800" />
+    </state>
+    <state width="3158" height="664" key="GridCell.Tab.2.left/0.0.3200.1800@0.0.3200.1800" timestamp="1605708139412" />
+    <state width="3158" height="664" key="GridCell.Tab.2.right" timestamp="1605708139412">
+      <screen x="0" y="0" width="3200" height="1800" />
+    </state>
+    <state width="3158" height="664" key="GridCell.Tab.2.right/0.0.3200.1800@0.0.3200.1800" timestamp="1605708139412" />
+    <state x="969" y="417" key="SettingsEditor" timestamp="1605698360222">
+      <screen x="0" y="0" width="3200" height="1800" />
+    </state>
+    <state x="969" y="417" key="SettingsEditor/0.0.3200.1800@0.0.3200.1800" timestamp="1605698360222" />
+    <state x="775" y="333" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1605696992472" />
     <state x="2695" y="334" key="SettingsEditor/1920.0.2560.1440/0.639.1920.1080@1920.0.2560.1440" timestamp="1605469700730" />
     <state x="3433" y="435" width="802" height="521" key="Vcs.Push.Dialog.v2" timestamp="1605320914754">
       <screen x="1920" y="0" width="2560" height="1440" />
@@ -129,5 +197,21 @@
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="2863" y="330" width="672" height="678" key="search.everywhere.popup/1920.0.2560.1440/0.639.1920.1080@1920.0.2560.1440" timestamp="1605657128644" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>152</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/newerlist.hpp</url>
+          <line>131</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

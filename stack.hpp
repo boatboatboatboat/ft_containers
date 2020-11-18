@@ -5,18 +5,19 @@
 #ifndef FT_CONTAINERS_STACK_HPP
 #define FT_CONTAINERS_STACK_HPP
 
+#include "helpers/hacks.hpp"
 #include "vector.hpp"
 
 namespace ft {
 
-template <typename T, typename Container = vector<T>>
+template <typename T, typename Container = vector<T> CPP_BAD>
 class stack {
 public:
     typedef T value_type;
     typedef Container container_type;
     typedef size_t size_type;
 
-    stack(container_type const& container = container_type())
+    explicit stack(container_type const& container = container_type())
         : _container(container)
     {
     }
@@ -82,6 +83,7 @@ public:
     }
 
 private:
+    stack();
     container_type _container;
 };
 
