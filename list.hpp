@@ -54,21 +54,14 @@ private:
     ValueItem();
 };
 
-enum IndicatorItemTag {
-    Head,
-    Tail,
-};
-
 template <typename _>
 class IndicatorItem_tp : public ListItem {
 public:
-    explicit IndicatorItem_tp(ListItem* prev, ListItem* next, enum IndicatorItemTag tag)
+    explicit IndicatorItem_tp(ListItem* prev, ListItem* next)
         : ListItem(prev, next)
-        , tag(tag)
     {
     }
     virtual ~IndicatorItem_tp() { }
-    enum IndicatorItemTag tag;
 
 private:
     IndicatorItem_tp();
@@ -517,8 +510,7 @@ private:
     size_type _len;
     item_type* _front;
     item_type* _back;
-    tag_item_type _head;
-    tag_item_type _tail;
+    tag_item_type _ghost;
 };
 
 }

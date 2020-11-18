@@ -1,11 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeSettings">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="ft_containers" targetName="ft_containers" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
+  <component name="ChangeListManager">
+    <list default="true" id="551b2424-5a18-4de1-8e66-a4d22becc732" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.clang-format" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newerlist.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newlist.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ft_containers_git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ft_containers_git.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/list.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="o9cnj6fz" />
+  </component>
+  <component name="ProjectId" id="1kGJA1k97aV0Gj4LHuSaFFPx7cu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.overridden" value="true" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ft_containers" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ft_containers" TARGET_NAME="ft_containers" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ft_containers" RUN_TARGET_NAME="ft_containers">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="551b2424-5a18-4de1-8e66-a4d22becc732" name="Default Changelist" comment="" />
+      <created>1605320847404</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605320847404</updated>
+      <workItem from="1605320848670" duration="76000" />
+      <workItem from="1605469525707" duration="2882000" />
+      <workItem from="1605540261568" duration="5759000" />
+      <workItem from="1605644273565" duration="74000" />
+      <workItem from="1605645124664" duration="5627000" />
+    </task>
+    <task id="LOCAL-00001" summary="asfsdfasdfasdf">
+      <created>1605320909654</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605320909654</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="asfsdfasdfasdf" />
+    <option name="LAST_COMMIT_MESSAGE" value="asfsdfasdfasdf" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2982" y="457" width="426" height="477" key="FileChooserDialogImpl" timestamp="1605469623124">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2982" y="457" width="426" height="477" key="FileChooserDialogImpl/1920.0.2560.1440/0.639.1920.1080@1920.0.2560.1440" timestamp="1605469623124" />
+    <state x="2695" y="334" key="SettingsEditor" timestamp="1605469700730">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2695" y="334" key="SettingsEditor/1920.0.2560.1440/0.639.1920.1080@1920.0.2560.1440" timestamp="1605469700730" />
+    <state x="3433" y="435" width="802" height="521" key="Vcs.Push.Dialog.v2" timestamp="1605320914754">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="3433" y="435" width="802" height="521" key="Vcs.Push.Dialog.v2/1920.0.2560.1440/0.639.1920.1080@1920.0.2560.1440" timestamp="1605320914754" />
+    <state x="2863" y="330" width="672" height="678" key="search.everywhere.popup" timestamp="1605657128644">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2863" y="330" width="672" height="678" key="search.everywhere.popup/1920.0.2560.1440/0.639.1920.1080@1920.0.2560.1440" timestamp="1605657128644" />
   </component>
 </project>

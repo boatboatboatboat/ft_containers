@@ -1,5 +1,6 @@
-#include "list.hpp"
+//#include "list.hpp"
 #include "vector.hpp"
+#include "newlist.hpp"
 #include <iostream>
 #include <list>
 #include <sstream>
