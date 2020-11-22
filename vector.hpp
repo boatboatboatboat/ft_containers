@@ -273,7 +273,7 @@ private:
     {
         size_t min = _size + n;
         if (min > _capacity) {
-            size_t x = _capacity ?: 8;
+            size_t x = _capacity ? _capacity : 8;
             while (min > x) {
                 x *= 2;
             }
@@ -362,18 +362,18 @@ public:
         _capacity = 0;
     }
 
-    bool operator==(vector const& rhs) const
+    friend bool operator==(vector const& lhs, vector const& rhs)
     {
-        if (this == &rhs) {
+        if (&lhs == &rhs) {
             return true;
         }
-        if (_size != rhs.size()) {
+        if (lhs.size() != rhs.size()) {
             return false;
         }
 
-        const_iterator si = begin();
+        const_iterator si = lhs.begin();
         const_iterator oi = rhs.begin();
-        while (si != end()) {
+        while (si != lhs.end()) {
             if (*si != *oi) {
                 return false;
             }
@@ -383,16 +383,16 @@ public:
         return true;
     }
 
-    bool operator!=(vector const& rhs) const { return !(*this == rhs); }
+    friend bool operator!=(vector const& lhs, vector const& rhs) { return !(lhs == rhs); }
 
-    bool operator<(vector const& rhs) const
+    friend bool operator<(vector const& lhs, vector const& rhs)
     {
-        if (this == &rhs) {
+        if (&lhs == &rhs) {
             return false;
         }
-        const_iterator si = begin();
+        const_iterator si = lhs.begin();
         const_iterator oi = rhs.begin();
-        while (si != end()) {
+        while (si != lhs.end()) {
             if (oi == rhs.end() || *oi < *si) {
                 return false;
             } else if (*oi < *si) {
@@ -404,9 +404,9 @@ public:
         return oi != rhs.end();
     }
 
-    bool operator>(vector const& rhs) const { return rhs < *this; }
-    bool operator<=(vector const& rhs) const { return !(*this > rhs); }
-    bool operator>=(vector const& rhs) const { return !(*this < rhs); }
+    friend bool operator>(vector const& lhs, vector const& rhs) { return rhs < lhs; }
+    friend bool operator<=(vector const& lhs, vector const& rhs) { return !(lhs > rhs); }
+    friend bool operator>=(vector const& lhs, vector const& rhs) { return !(lhs < rhs); }
 
 private:
     pointer _data;
@@ -414,6 +414,12 @@ private:
     size_type _capacity;
 };
 
+}
+
+template <typename T>
+void swap(ft::vector<T>& a, ft::vector<T>& b)
+{
+    a.swap(b);
 }
 
 #endif //FT_CONTAINERS_VECTOR_HPP

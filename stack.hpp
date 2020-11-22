@@ -15,7 +15,7 @@ class stack {
 public:
     typedef T value_type;
     typedef Container container_type;
-    typedef size_t size_type;
+    typedef typename Container::size_type size_type;
 
     explicit stack(container_type const& container = container_type())
         : _container(container)
@@ -52,41 +52,34 @@ public:
         _container.pop_back();
     }
 
-    bool operator==(stack const& rhs) const
+    friend bool operator==(stack const& lhs, stack const& rhs)
     {
-        return _container == rhs._container;
+        return lhs._container == rhs._container;
     }
-
-    bool operator!=(stack const& rhs) const
+    friend bool operator!=(stack const& lhs, stack const& rhs)
     {
-        return _container != rhs._container;
+        return lhs._container != rhs._container;
     }
-
-    bool operator<(stack const& rhs) const
+    friend bool operator<(stack const& lhs, stack const& rhs)
     {
-        return _container < rhs._container;
+        return lhs._container < rhs._container;
     }
-
-    bool operator<=(stack const& rhs) const
+    friend bool operator<=(stack const& lhs, stack const& rhs)
     {
-        return _container <= rhs._container;
+        return lhs._container <= rhs._container;
     }
-
-    bool operator>=(stack const& rhs) const
+    friend bool operator>(stack const& lhs, stack const& rhs)
     {
-        return _container >= rhs._container;
+        return lhs._container > rhs._container;
     }
-
-    bool operator>(stack const& rhs) const
+    friend bool operator>=(stack const& lhs, stack const& rhs)
     {
-        return _container > rhs._container;
+        return lhs._container >= rhs._container;
     }
 
 private:
-    stack();
     container_type _container;
 };
 
 }
-
 #endif //FT_CONTAINERS_STACK_HPP

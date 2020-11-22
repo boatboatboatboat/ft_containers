@@ -38,13 +38,13 @@ public:
     }
     template <typename Iter>
     reverse_bd_iterator(reverse_bd_iterator<Iter> const& rev_it)
-        : _iterator(rev_it._iterator)
+        : _iterator(rev_it.base())
     {
     }
     template <typename Iter>
     reverse_bd_iterator& operator=(reverse_bd_iterator<Iter> const& rev_it)
     {
-        _iterator = rev_it._iterator;
+        _iterator = rev_it.base();
         return *this;
     }
 
@@ -82,8 +82,8 @@ public:
 
     reference operator*() { return *_iterator; }
     const_reference operator*() const { return *_iterator; }
-    pointer_type operator->() { return _iterator; }
-    const_pointer_type operator->() const { return _iterator; }
+    pointer_type operator->() { return &*_iterator; }
+    const_pointer_type operator->() const { return &*_iterator; }
 
 protected:
     iterator_type _iterator;
